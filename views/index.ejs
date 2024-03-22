@@ -1,0 +1,21 @@
+<%- include('./partials/head') %>
+
+
+
+<main>
+
+<h3> Favorieten</h3>
+
+<article>
+<% items.forEach(item => { %>
+<a href="./detail/<%= item.id %>" class="title-items"><%= item.title %></a>
+<% if (item.afbeelding) { %>
+<img src="https://fdnd-agency.directus.app/assets/<%= item.afbeelding %>" class="items"  alt="items-afbeeldingen"
+<% } %>
+<% }) %>
+
+</article>
+
+
+
+<%- include('./partials/foot') %>

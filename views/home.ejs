@@ -1,0 +1,27 @@
+<%- include('./partials/head') %>
+
+
+<main>
+
+    <h1> Welcome</h1>
+
+    <article class="profiles">
+        <% profiles.forEach(profile => { %>
+        <h2><a href="./index/<%= profile.id %>" class="profile-text"><%= profile.name %></a></h2>
+        <% if (profile.avatar) { %>
+        <img src="https://fdnd-agency.directus.app/assets/<%= profile.avatar %>" class="profile-avatars" alt=""
+        <% } %>
+        <% }) %>
+    
+    </article>
+
+<!-- <section class="overview"><h1><a href="/overview"> Back</a></h1></section> -->
+
+<!-- <section class="home">
+    <div class="text"><img src="/assets/oba_20.png" alt=""></div>
+    
+</section> -->
+
+</main>
+
+<%- include('./partials/foot') %>
