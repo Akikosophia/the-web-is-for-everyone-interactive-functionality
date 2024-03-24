@@ -2,26 +2,49 @@
 
 <main class="detail">
 
-<article>
+
 <% items.forEach(item => { %>
-<h2><a href="./detail/<%= item.id %>" class="item-title"><%= item.title %></a></h2>
-<% if (item.afbeelding) { %>
-<img src="https://fdnd-agency.directus.app/assets/<%= item.afbeelding %>" class="item-afbeelding" alt="items-afbeeldingen"
-<% } %> 
-<p class="item-samenvatting"><%- item.description %></p>
-<button class="like-button">❤️</button>
+      <article>
+          <h2><a href="./detail/<%= item.id %>" class="item-title"><%= item.title %></a></h2>
+            <% if (item.afbeelding) { %>
+
+             <img src="https://fdnd-agency.directus.app/assets/<%= item.afbeelding %>" class="item-afbeelding" alt="">
+              <% } %> 
+
+            <p class="item-samenvatting"><%- item.description %></p>
+
+          <button class="like-button">❤️</button>
 
 <form method="POST" action="/detail/<%= item.id %>">
- <button> voeg toe aan lijst</button>
+    <button> voeg toe aan lijst</button>
 </form>
 
 <a href="/leeslijst"> leeslijst </a>
-
-<% }) %>
-
 </article>
 
-<!-- popup dialog-->
+
+<% }) %> 
+
+<!-- 
+
+    <h2>Berichten</h2>
+      <ul>
+         <% reviews.forEach(review => { %> 
+            <article>
+        <li><%= review %></li> <% }) %>
+     </ul>
+  
+<form method="POST" action="/detail">
+    <label> Typ hier je bericht   
+       <textarea required name="review">
+         </textarea>
+        </label>
+    <button type="submit" >verstuurd</button>
+</form>
+  
+</article>
+
+ popup dialog-->
 
 </main>
 

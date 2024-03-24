@@ -3,18 +3,21 @@
 
 <main>
 
-    <h1> Welcome</h1>
 
-    <article class="profiles">
-        <% profiles.forEach(profile => { %>
-        <h2><a href="./index/<%= profile.id %>" class="profile-text"><%= profile.name %></a></h2>
-        <% if (profile.avatar) { %>
-        <img src="https://fdnd-agency.directus.app/assets/<%= profile.avatar %>" class="profile-avatars" alt=""
-        <% } %>
-        <% }) %>
+ <h1> Welcome</h1>
+
+
+<% profiles.forEach(profile => { %>
+         <article class="profiles">
+             <% profiles.forEach(profile => { %>
+                <h2><a href="./index/<%= profile.id %>" class="profile-text"><%= profile.name %></a></h2>
+
+                <% if (profile.avatar) { %>
+              <img src="https://fdnd-agency.directus.app/assets/<%= profile.avatar %>" class="profile-avatars" alt="">
+            <% } %>
+        </article>
+<% }) %>
     
-    </article>
-
 <!-- <section class="overview"><h1><a href="/overview"> Back</a></h1></section> -->
 
 <!-- <section class="home">

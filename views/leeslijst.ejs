@@ -5,17 +5,15 @@
 
 <ul>
     <% items.forEach(item => { %>
-<li>
-    <a href="./detail/<%= item.id %>"></a>
-</li>
-<h2><%= item.title %></a></h2>
-<% if (item.afbeelding) { %>
-<img src="https://fdnd-agency.directus.app/assets/<%= item.afbeelding %>" class="item-afbeelding" alt="items-afbeeldingen"
-<% } %>
-
+        <li>
+           <a href="./detail/<%= item.id %>"></a>
+             </li>
+              <h2><%= item.title %></a></h2>
+             <% if (item.afbeelding) { %>
+            <img src="https://fdnd-agency.directus.app/assets/<%= item.afbeelding %>" class="item-afbeelding" alt="items-afbeeldingen">
+        <% } %>
 <% }); %>
 </ul>
-
 
 </article>
 

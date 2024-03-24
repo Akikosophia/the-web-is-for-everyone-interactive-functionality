@@ -5,23 +5,33 @@
 }
 
 /* Fonts being used by the oba */
-@font-face {
-    font-family: AvenirRoman;
-    src: url(../font/Avenir-roman.ttf);
-}
-
 
 @font-face {
-    font-family: AvenirMedium;
-    src: url(../font/Avenir-medium.ttf);
+    font-family: 'avenirroman';
+    src: url('avenir-roman-webfont.woff2') format('woff2'),
+         url('avenir-roman-webfont.woff') format('woff'),
+         url('avenir-roman-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-
 
 @font-face {
-    font-family: AvenirBlack;
-    src: url(../font/Avenir\ -black.ttf);
+    font-family: 'avenirmedium';
+    src: url('avenir-medium-webfont.woff2') format('woff2'),
+         url('avenir-medium-webfont.woff') format('woff'),
+         url('avenir-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'avenirblack';
+    src: url('avenir_-black-webfont.woff2') format('woff2'),
+         url('avenir_-black-webfont.woff') format('woff'),
+         url('avenir_-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root{
     /* ===== Colors ===== */
@@ -45,7 +55,7 @@ main {
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
-    font-family: AvenirMedium;
+    font-family: 'avenirroman';
 }
 
 
@@ -74,7 +84,6 @@ section {
     left: 0;
     z-index: 2;
 }
-
 
 article {
     display: flex;
