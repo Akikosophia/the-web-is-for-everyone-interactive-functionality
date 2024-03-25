@@ -139,23 +139,6 @@ items.data.forEach(function(item) {
 });
 
 
-// review
-
-// const reviews = []
-
-// app.get('/detail', function (request, response) {
-
-//     response.render('/detail', {reviews: reviews})
-//   })
-
-
-// app.post('/detail', function (request, response) {
-//     // Er is nog geen afhandeling van POST, redirect naar GET op /
-//     // console.log(request.body);
-//     reviews.push(request.main.review);
-  
-//     response.redirect( 303,'/detail');
-//   })
 
   // Stel het poortnummer in waar express op moet gaan luisteren
 app.set('port', process.env.PORT || 8000)

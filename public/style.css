@@ -50,21 +50,6 @@
     --tran-05: all 0.3s ease;
 }
 
-
-main {
-    min-height: 100vh;
-    background-color: var(--body-color);
-    transition: var(--tran-05);
-    font-family: 'avenirroman';
-}
-
-
-::selection {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-
 main.dark {
     --body-color: #18191a;
     --sidebar-color: #242526;
@@ -73,6 +58,23 @@ main.dark {
     --toggle-color: #fff;
     --text-color: #ccc;
 }
+
+main {
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+    font-family: 'avenirroman';
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 
 section {
     position: relative;
@@ -105,15 +107,21 @@ article .profiles {
 }
 
 .profile-avatars {
-    width: 60%;
+    width: 80%;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-h1, h2 {
-  text-align: center;
-  font-size: 1em;
+
+h1 {
+    text-align: left;
+    margin-left: 3.3em;
+    margin-top: 0.5em;
+}
+
+h2 {
+  text-align: left;
   margin-left: 4.5em;
   font-size: 2em;
 }
@@ -136,6 +144,25 @@ p {
     text-align: center;
     margin-left: 2.5em;
 }
+
+article p {
+    text-align: center;
+    margin-left:-1em;
+}
+
+/* .oba-logo { */
+    /* margin-left: 14.8em; */
+    /* margin-top: -2em; */
+/* } */
+
+.zoek-balk {
+    padding: 20px;
+}
+
+.zoek-balk-menu {
+    margin-left: 6.5em;
+}
+
 
 /* items */
 
@@ -163,7 +190,6 @@ a .title-items {
     color: black;
 }
 
-
 /* --- detail item --- */
 
 .item-afbeelding {
@@ -179,11 +205,6 @@ a .title-items {
     color: black;
 }
 
-article p {
-    text-align: center;
-    margin-left:-1em;
-    margin: 1em;
-}
 
 /* --- like button --- */
 
@@ -275,16 +296,9 @@ article p {
     
     
 img {
- 
         object-fit: cover;
 }
-    
-/* .logo-oba {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-} */
+
 
 .sidebar header{
         position: relative;
