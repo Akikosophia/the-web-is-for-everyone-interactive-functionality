@@ -63,6 +63,10 @@ app.get('/', function(request, response) {
     console.log(apiItem) 
 })
 
+
+// books
+
+
 //
 
 app.get('/home', async function(request, response) {
@@ -137,7 +141,6 @@ items.data.forEach(function(item) {
   }
 });
 });
-
 
 
   // Stel het poortnummer in waar express op moet gaan luisteren

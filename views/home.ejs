@@ -3,26 +3,26 @@
 
 <main>
 
-<!-- 
-    <div class="zoek-balk">
-        <div class="zoek-balk-menu">
-                <i class='bx bx-search icon'></i>
-                <input type="tekst" placeholder="Zoek...">
-        </div> -->
-<!-- 
-    <img src="/assets/oba_20.png" class="oba-logo" alt="oba-logo"> -->
+    <img src="/assets/oba_20.png" class="oba-logo" alt="oba-logo">
+    
+<div class="zoek-balk">
+    <div class="zoek-balk-menu">
+        <i class='bx bx-search icon'></i>
+          <input type="text" placeholder="">
+        </div>  
 
-
- <h1> Welkom Akiko Schermer bij OBA!</h1>
+    
+ <!-- <img src="/assets/oba_20.png" class="oba-logo" alt="oba-logo"> -->
+     <h1> Welkom Akiko</h1>
     
 <% profiles.forEach(profile => { %>
          <article class="profiles">
-                <h2><a href="./index/<%= profile.id %>" class="profile-text"><%= profile.name %></a></h2>
-
-            <% if (profile.avatar) { %>
-              <img src="https://fdnd-agency.directus.app/assets/<%= profile.avatar %>" class="profile-avatars" alt="">
-            <% } %>
-        </article>
+            <a href="./index/<%= profile.id %>" class="profile-text">
+              <% if (profile.avatar) { %>
+            <img src="https://fdnd-agency.directus.app/assets/<%= profile.avatar %>" class="profile-avatars" alt="">
+            <div class="profile-name"><%= profile.name %></a></div>
+        <% } %>
+    </article>
 <% }) %>
     
 

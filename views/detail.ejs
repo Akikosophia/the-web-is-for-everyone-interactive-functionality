@@ -2,32 +2,58 @@
 
 <main class="detail">
 
+  <img src="/assets/oba_20.png" class="oba-logo" alt="oba-logo">
+    
+  <div class="zoek-balk">
+      <div class="zoek-balk-menu">
+          <i class='bx bx-search icon'></i>
+            <input type="text" placeholder="">
+          </div>  
 
 <% items.forEach(item => { %>
-      <article>
-          <h2><a href="./detail/<%= item.id %>" class="item-title"><%= item.title %></a></h2>
+      <article class="details">
+          <a href="./detail/<%= item.id %>" class="item-title">
             <% if (item.afbeelding) { %>
-
+              <h2 class="item-titel"> <%= item.title %></h2></a>
              <img src="https://fdnd-agency.directus.app/assets/<%= item.afbeelding %>" class="item-afbeelding" alt="">
               <% } %> 
+
+            <!-- <section>
+              <div class="stars">
+                <input type="radio" id="five" name="rate" value="5">
+                <label for="five"></label>
+                <input type="radio" id="four" name="rate" value="4">
+                <label for="four"></label>
+                <input type="radio" id="three" name="rate" value="3">
+                <label for="three"></label>
+                <input type="radio" id="two" name="rate" value="2">
+                <label for="two"></label>
+                <input type="radio" id="one" name="rate" value="1">
+                <label for="one"></label>
+              </div>
+            </section> -->
+            
+            <form method="POST" action="/detail/<%= item.id %>">
+              <button> Voeg toe aan leeslijst</button>
+          </form>
+
+            <button><a href="/leeslijst"> Leeslijst </a></button>
+            </article>
 
             <p class="item-samenvatting"><%- item.description %></p>
 
           <button class="like-button">❤️</button>
 
-<form method="POST" action="/detail/<%= item.id %>">
-    <button> voeg toe aan lijst</button>
-</form>
 
-<a href="/leeslijst"> leeslijst </a>
-</article>
+          
+
 
 
 <% }) %> 
 
 
 
- <!-- popup dialog -->
+ <!-- popup dialog--> 
 
 </main>
 
