@@ -291,15 +291,16 @@ button {
     border-radius: .5rem;
     font-family: inherit;
     font-size: inherit;
-    text-decoration: none;
-    color: black;
     background: var(--sidebar-color);
     cursor: pointer;
     margin-left: 0.5em; 
-    margin:em;
+    margin:1em;
 }
 
-
+button a {
+    text-decoration: none;
+    color: black;
+}
 
 /* --- like button --- */
 
