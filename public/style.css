@@ -203,9 +203,7 @@ article p {
     padding-left: 10px;
 }
 
-
-/* items */
-
+/* scroll */
 
 /* main .scroll-container {
   
@@ -230,6 +228,8 @@ article p {
     padding: 10px;
 }  */
 
+
+/* items */
 
 .item-titels {
     /* margin-right: 2em; */
@@ -261,7 +261,6 @@ a .title-items {
 }
 
 
-
 /* --- detail item --- */
 
 .item-afbeelding {
@@ -271,9 +270,11 @@ a .title-items {
     margin: 1em;
 }
 
+
 a .item-titel {
     text-decoration: none;
 }
+
 
 .item-title  {
     text-align: left;
@@ -297,6 +298,7 @@ button {
     margin-left: 0.5em; 
     margin:em;
 }
+
 
 
 /* --- like button --- */
@@ -635,9 +637,3 @@ body.dark .home .text {
 /* mediaqueries */
 
 
-@media (min-width:375px) {
-
-  
-  
-
-}
