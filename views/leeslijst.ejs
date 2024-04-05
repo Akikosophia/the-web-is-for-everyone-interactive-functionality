@@ -2,21 +2,22 @@
 
 <main>
 
-<article>
+
 
 <ul>
     <% items.forEach(item => { %>
-        <li>
+        <article><li>
            <a href="./detail/<%= item.id %>"></a>
              </li>
               <h2><%= item.title %></a></h2>
              <% if (item.afbeelding) { %>
-            <img src="https://fdnd-agency.directus.app/assets/<%= item.afbeelding %>" class="item-afbeelding" alt="items-afbeeldingen">
+            <img src="https://fdnd-agency.directus.app/assets/<%= item.afbeelding %>" class="item-afbeelding" alt="">
         <% } %>
 <% }); %>
-</ul>
+</article></ul>
 
-</article>
+
+
 
 </main>
 

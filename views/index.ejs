@@ -2,13 +2,14 @@
 
 <main class="scroll-container">
 
-  <img src="/assets/oba_20.png" class="oba-logo" alt="oba-logo">
+<img src="/assets/oba_20.png" class="oba-logo" alt="oba-logo">
     
   <div class="zoek-balk">
       <div class="zoek-balk-menu">
           <i class='bx bx-search icon'></i>
             <input type="text" placeholder="">
           </div>  
+
 
 <h3> Favorieten</h3>
 
@@ -17,8 +18,8 @@
    <article class="alle-items"> 
        <a href="./detail/<%= item.id %>" class="title-items">
           <% if (item.afbeelding) { %> 
-        <img src="https://fdnd-agency.directus.app/assets/<%= item.afbeelding %>" class="items"  alt="">
-      <div class="item-titels"><%= item.title %></div></a><% } %>
+           <img src="https://fdnd-agency.directus.app/assets/<%= item.afbeelding %>" class="items"  alt="">
+          <div class="item-titels"><%= item.title %></div></a><% } %>
     </article>
 <% }) %>
 

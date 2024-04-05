@@ -3,35 +3,31 @@
 
 <main>
 
-    <img src="/assets/oba_20.png" class="oba-logo" alt="oba-logo">
+<img src="/assets/oba_20.png" class="oba-logo" alt="oba-logo">
     
+
 <div class="zoek-balk">
     <div class="zoek-balk-menu">
-        <i class='bx bx-search icon'></i>
-          <input type="text" placeholder="">
-        </div>  
+         <i class='bx bx-search icon'></i>
+    <input type="text" placeholder="">
+</div>  
 
-    
- <!-- <img src="/assets/oba_20.png" class="oba-logo" alt="oba-logo"> -->
-     <h1> Welkom Akiko</h1>
+
+<h1> Welkom Akiko</h1>
     
 <% profiles.forEach(profile => { %>
-         <article class="profiles">
-            <a href="./index/<%= profile.id %>" class="profile-text">
-              <% if (profile.avatar) { %>
-            <img src="https://fdnd-agency.directus.app/assets/<%= profile.avatar %>" class="profile-avatars" alt="">
+    <article class="profiles">
+        <a href="./index/<%= profile.id %>" class="profile-text">
+           <% if (profile.avatar) { %>
+             <img src="https://fdnd-agency.directus.app/assets/<%= profile.avatar %>" class="profile-avatars" alt="">
             <div class="profile-name"><%= profile.name %></a></div>
-        <% } %>
+         <% } %>
     </article>
 <% }) %>
     
 
 <!-- <section class="overview"><h1><a href="/overview"> Back</a></h1></section> -->
-
 <!-- <section class="home"> -->
-
-    
-<!-- </section> -->
 
 </main>
 
