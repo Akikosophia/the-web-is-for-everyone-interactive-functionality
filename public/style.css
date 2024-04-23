@@ -79,7 +79,7 @@ body {
 
 section {
     position: relative;
-  }
+}
 
 .overview {
     position: absolute;
@@ -205,9 +205,6 @@ article p {
 
 /* scroll */
 
-/* main .scroll-container {
-  
-} */
 
 /* article.alle-items {
     background-color: white;
@@ -217,17 +214,14 @@ article p {
 }
 
 .scroll-items {
-
     background-color: white;
-    overflow: auto;
     white-space: nowrap;
     padding: 10px;
-} */
+} 
 
-/* .scroll-items img {
+.scroll-items img {
     padding: 10px;
-}  */
-
+}   */
 
 /* items */
 
@@ -264,6 +258,7 @@ a .title-items {
 /* --- detail item --- */
 
 .item-afbeelding {
+    /* display: none; */
     width: 80%;
     object-fit: cover;
     border-radius: 10px;
@@ -273,10 +268,12 @@ a .title-items {
 
 a .item-titel {
     text-decoration: none;
+    /* display: none; */
 }
 
 
 .item-title  {
+    /* display: none; */
     text-align: left;
     text-decoration: none;
     color: black;
@@ -286,6 +283,7 @@ a .item-titel {
 
 
 button {
+    /* display: none; */
     padding: .3em .6em;
     border: 1px solid transparent;
     border-radius: .5rem;
@@ -300,6 +298,7 @@ button {
 button a {
     text-decoration: none;
     color: black;
+    /* display: none; */
 }
 
 /* --- like button --- */
